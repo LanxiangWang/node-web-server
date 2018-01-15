@@ -54,6 +54,12 @@ app.get('/', (req, res) => {
   });
 })
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Previous Projects',
+  });
+});
+
 console.log("End of Code");
 
 // console.log('Start');
